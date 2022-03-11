@@ -58,7 +58,11 @@ elseif (num2>num1 && num2>num3) {
     console.log(num2, " es el número más alto")
     
 }
+elseif (num3>num1 && num3>num1) {
+    console.log(num3, " es el número más alto")
+    
+}
 else {
-    console.log(num3," es el número más alto")
+    console.log("son iguales")
 }
 
