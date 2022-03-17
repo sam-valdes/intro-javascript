@@ -3,10 +3,10 @@
 function sentencesearch(sentence,word) {
     let position= sentence.search(word)
     if (position>=0){
-        console.log("true")
+    return console.log("true")
     }
     else 
-        console.log("false")
+    return console.log("false")
 }
 sentencesearch("Tengo 2 perros", "perros");
 
@@ -29,10 +29,10 @@ function palindrome(word) {
     var arrayrev=splitword.reverse();
     var rev=arrayrev.join("");
     if (word==rev){
-        console.log("true")
+        return console.log("true")
     }
     else 
-        console.log("false")
+         return console.log("false")
 }
 palindrome("ana");
 
