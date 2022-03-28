@@ -60,7 +60,7 @@ if(calc.length>0){
 else 
   console.log(0)
 
-//Actividad 10.3
+//Actividad 10.3 ..
 
 /**
 * Escriba una función de JavaScript que tomará una serie de números almacenados
