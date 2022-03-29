@@ -45,7 +45,7 @@ const Accounts = [
         }
 
 
-
+//f(x) sam
         // function login(form){
         //     if (Users.includes(form.u.value)) {
         //         if (form.n.value=Accounts[Users.indexOf(form.u.value)].password) {
@@ -61,7 +61,7 @@ const Accounts = [
                 
 
 
-        //sam
+        // f(x) gabri
         function login(form){
             for(var i = 0 ; i < Accounts.length; i++){
               if(form.u.value = Accounts[i].name){
