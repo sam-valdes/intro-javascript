@@ -48,24 +48,46 @@ const Accounts = [
 //f(x) sam
 var usuario='sam'
 var saldo=1
+function login(form){
+  if (Users.includes(form.u.value)) {
+      if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
+          location="main.html";
+          
+          usuario=form.u.value;
+          saldo=Accounts[Users.indexOf(form.u.value)].balance;
+          alert('Bienvenido '+usuario+' tu saldo es '+saldo)
 
-        function login(form){
-            if (Users.includes(form.u.value)) {
-                if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
-                    location="main.html";
-                    usuario=form.u.value;
-                    saldo=Accounts[Users.indexOf(form.u.value)].balance;
-                    alert('Bienvenido',usuario,'tu saldo es ',saldo)
+      } else {
+          alert("NIP Incorrecto");
+      }
+  } else {
+      alert("Usuario no encontrado. Favor de comunicarse al 5533445500");
+      
+      
+  }
+}
 
-                } else {
-                    alert("NIP Incorrecto");
-                }
-            } else {
-                alert("Usuario no encontrado. Favor de comunicarse al 5533445500");
+
+
+
+        // function login(form){
+        //     if (Users.includes(form.u.value)) {
+        //         if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
+        //             alert('Bienvenido',form.u.value);
+        //             location="main.html";
+        //             usuario=form.u.value;
+        //             saldo=Accounts[Users.indexOf(form.u.value)].balance;
+                    
+
+        //         } else {
+        //             alert("NIP Incorrecto");
+        //         }
+        //     } else {
+        //         alert("Usuario no encontrado. Favor de comunicarse al 5533445500");
                 
                 
-            }
-        }
+        //     }
+        // }
                 
         function login_go(){
           location="login.html";
