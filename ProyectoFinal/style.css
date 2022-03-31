@@ -1,0 +1,321 @@
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 40px;;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+ 
+}
+
+.container{
+    background-color: #E8E8E6;
+    width: 680px;
+    height: 490px;
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(20,1fr);
+}    
+    .cambox{
+        width: 30%;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #14315F;
+        align-items: center;
+        margin-left: 18%;   
+    }
+
+
+
+    .cashbox{
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 18;
+        grid-row-end: 19;
+        background-color: #14315F;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+    .cashline{
+        width: 90%;
+        height:30%;
+        background-color: #2C83C2;
+    }
+
+    .screen{
+        background-color:#14315F;        ;
+        grid-row-start: 5;
+        grid-row-end:17;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        display:grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(12,1fr);
+        justify-content: flex-start;
+        font-size: 50%;
+    }
+        .title{
+            color:white;
+            grid-column-start: 3;
+            grid-column-end: 10;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .subtitle{
+            color:white;
+            grid-column-start: 3;
+            grid-column-end: 10;
+            grid-row-start: 5;
+            grid-row-end: 8;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-size: 120%;
+            font-weight: normal;
+        }
+
+        .loginbox{
+            grid-row-start: 7;
+            grid-row-end: 13;
+            grid-column-start: 3;
+            grid-column-end: 10;
+            display:flex;
+            justify-content:space-evenly;
+            flex-direction: column;
+            align-items: center;
+  
+        }
+
+        .inputbox{
+            background-color: white;
+            width: 35%;
+            height: 15%;
+        }
+
+        .inputtext{
+            color: white;
+            width: 40%;
+            height: 5%;
+            font-size: 110%;
+        }
+        .inputbutton{
+            color:white;
+            font-size: 170%;
+            width: 40%;
+            height: 20%;
+            background-color: #BD4150;
+            border-radius: 2px;
+        }        
+
+        .balancecontainer{
+            height: 70%;
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 8;
+            grid-row-end: 10;
+            background-color: white;
+            font-size: 200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .sheader{
+            background-color:#0D2141;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 13;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+            .logo{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                display:flex;
+                align-items: flex-start;
+            }
+
+                .lo{
+                    width: 45%;
+                    height: 60%;
+                }
+
+
+            .contact{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 10%;
+                
+
+            }
+            .st{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                color:white;
+            }
+
+            .bottomA{
+                grid-row-start: 8;
+                grid-row-end: 11;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+            }
+            .bottomB{
+                grid-row-start: 10;
+                grid-row-end: 13;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+            }
+            .bottomC{
+                grid-row-start: 8;
+                grid-row-end: 11;
+                grid-column-start: 9;
+                grid-column-end: 13;
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+            }
+            .bottomD{
+            grid-row-start: 10;
+            grid-row-end: 13;
+            grid-column-start: 9;
+            grid-column-end: 13;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+            .button{
+                width: 70%;
+                height: 60%;
+                background-color:#8D8D8D;
+                border-radius: 2px;
+                color: white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 160%;
+                font-weight: normal;
+
+            }
+            .buttonred{
+                width: 70%;
+                height: 60%;
+                background-color: #BD4150;
+                border-radius: 2px;
+                color: white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 160%;
+                font-weight: normal;
+
+            }
+
+            .buttongreen{
+                width: 70%;
+                height: 60%;
+                background-color: #90C6A0;
+                border-radius: 2px;
+                color: white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 160%;
+                font-weight: normal;
+
+            }
+
+
+    .topA{
+        background-color: #8D8D8D;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .topB{
+        background-color: #8D8D8D;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+    .buttonsA{
+        width:70%;
+        height:100%;
+        background-color: #C6C6C6;
+        padding-left: 25%;
+        padding-right: 5%;
+        padding-top: 0%;
+        display:flex;
+        align-content:center;
+        grid-row-start: 7;
+        grid-row-end: 17;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+
+    }
+
+    .buttonsB{
+        width:70%;
+        height:100%;
+        background-color: #C6C6C6;
+        padding-left: 25%;
+        padding-right: 5%;
+        display:flex;
+        align-content:center;
+        grid-row-start: 7;
+        grid-row-end: 17;
+        grid-column-start: 6;
+        grid-column-end: 7;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+
+    }
+
+        .b{
+            width: 70%;
+            height:15%;
+            border-radius: 5px;
+            background-color: #2C83C2;
+            border: solid 3px black;
+        }
