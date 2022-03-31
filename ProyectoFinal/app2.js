@@ -46,8 +46,8 @@ const Accounts = [
 
 
 //f(x) sam
-let usuario='sam'
-let saldo=1
+var usuario='sam'
+var saldo=1
 
         function login(form){
             if (Users.includes(form.u.value)) {
