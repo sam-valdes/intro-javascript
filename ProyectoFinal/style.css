@@ -125,7 +125,19 @@ body {
             background-color: #BD4150;
             border-radius: 2px;
         }        
+            .cashimg{
+                padding-left: 20%;
+                width: 90%;
+                height: 90%;
+                grid-column-start: 5;
+                grid-column-end: 8;
+                grid-row-start: 8;
+                grid-row-end: 11;
+                display:flex;
+                justify-content: center;
+                align-items: center;
 
+            }
         .balancecontainer{
             height: 70%;
             grid-column-start: 6;

@@ -46,13 +46,17 @@ const Accounts = [
 
 
 //f(x) sam
-var usuario='sam'
-var saldo=1
-function login(form){
+
+var saldo=1;
+var usuario="fer" ;
+
+function login(form,usuario,saldo){
+  
+  
   if (Users.includes(form.u.value)) {
       if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
           location="main.html";
-          
+          k=Users.indexOf(form.u.value)
           usuario=form.u.value;
           saldo=Accounts[Users.indexOf(form.u.value)].balance;
           alert('Bienvenido '+usuario+' tu saldo es '+saldo)
@@ -65,8 +69,33 @@ function login(form){
       
       
   }
+  usuario='sam2';
+  
 }
 
+//f(X) buena
+// function login(form){
+  
+  
+//   if (Users.includes(form.u.value)) {
+//       if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
+//           location="main.html";
+//           k=Users.indexOf(form.u.value)
+//           usuario=form.u.value;
+//           saldo=Accounts[Users.indexOf(form.u.value)].balance;
+//           alert('Bienvenido '+usuario+' tu saldo es '+saldo)
+
+//       } else {
+//           alert("NIP Incorrecto");
+//       }
+//   } else {
+//       alert("Usuario no encontrado. Favor de comunicarse al 5533445500");
+      
+      
+//   }
+//   usuario='sam';
+  
+// }
 
 
 
@@ -88,7 +117,9 @@ function login(form){
                 
         //     }
         // }
-                
+          
+        //Funciones para redireccionar a otras pantallas
+
         function login_go(){
           location="login.html";
           
@@ -116,7 +147,8 @@ function login(form){
         
 
         let objetivo = document.getElementById('saldoprint');
-        objetivo.innerHTML = Number(saldo); 
+        
+        objetivo.innerHTML = (usuario); 
         let objetivo2 = document.getElementById('usuarioprint');
         objetivo2.innerHTML = Number(usuario); 
 
