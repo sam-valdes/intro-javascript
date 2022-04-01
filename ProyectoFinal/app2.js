@@ -47,8 +47,8 @@ const Accounts = [
 
 //f(x) sam
 
-var saldo=1;
-var usuario="fer" ;
+var saldo=520;
+var usuario ;
 
 function login(form,usuario,saldo){
   
@@ -57,7 +57,7 @@ function login(form,usuario,saldo){
       if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
           location="main.html";
           k=Users.indexOf(form.u.value)
-          usuario=form.u.value;
+          user1=form.u.value;
           saldo=Accounts[Users.indexOf(form.u.value)].balance;
           alert('Bienvenido '+usuario+' tu saldo es '+saldo)
 
@@ -69,7 +69,7 @@ function login(form,usuario,saldo){
       
       
   }
-  usuario='sam2';
+  usuario=user1;
   
 }
 
@@ -99,25 +99,6 @@ function login(form,usuario,saldo){
 
 
 
-        // function login(form){
-        //     if (Users.includes(form.u.value)) {
-        //         if (form.n.value==Accounts[Users.indexOf(form.u.value)].password) {
-        //             alert('Bienvenido',form.u.value);
-        //             location="main.html";
-        //             usuario=form.u.value;
-        //             saldo=Accounts[Users.indexOf(form.u.value)].balance;
-                    
-
-        //         } else {
-        //             alert("NIP Incorrecto");
-        //         }
-        //     } else {
-        //         alert("Usuario no encontrado. Favor de comunicarse al 5533445500");
-                
-                
-        //     }
-        // }
-          
         //Funciones para redireccionar a otras pantallas
 
         function login_go(){
@@ -144,7 +125,7 @@ function login(form,usuario,saldo){
         }
 
 
-        
+//print        
 
         let objetivo = document.getElementById('saldoprint');
         
@@ -152,7 +133,49 @@ function login(form,usuario,saldo){
         let objetivo2 = document.getElementById('usuarioprint');
         objetivo2.innerHTML = Number(usuario); 
 
-        // document.getElementById("usuarioprint").innerHTML = usuario;
-        // document.getElementById("saldoprint").innerHTML = saldo;
+
+//Función retiro
 
 
+function withdraw(form,withdrawQ,saldo){
+  
+  
+  if (Number(saldo)>=10) {
+      if (Number(saldo)-10>=withdrawQ) {
+          location="withdraw2.html";
+          saldofinal=saldo-wq
+          user1=form.u.value;
+      } else {
+          alert("El saldo no es suficiente para realizar un retiro y mantener el saldo mínimo de 10. Por favor intente con otra cantidad.");
+      }
+  } else {
+      alert("Lo sentimos, esta cuenta no tiene el saldo mínimo requerido para realizar retiros.");
+      
+      
+  }
+  saldo=saldofinal;
+  
+}
+
+//Función depósito
+
+
+function deposit(form,depositQ,saldo){
+  
+  
+  if (Number(saldo)>=10) {
+      if (Number(saldo)-10>=depositQ) {
+          saldofinal=saldo+depositQ;
+          location:"balance.html";
+          
+      } else {
+          alert("El depósito supera el monto máximo de $990 que puede tener una cuenta. Por favor intente con otra cantidad.");
+      }
+  } else {
+      alert("Lo sentimos, esta cuenta está en el saldo máximo permitido por lo que no se pueden realizar depósitos.");
+      
+      
+  }
+  saldo=saldofinal;
+  
+}
